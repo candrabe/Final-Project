@@ -41,6 +41,10 @@ a:hover {
 }
 
 /*-- Padding Top --*/
+.pt-30 {
+    padding-top: 30px;
+}
+
 .pt-120 {
     padding-top: 120px;
 }
