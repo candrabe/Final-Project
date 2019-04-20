@@ -28,6 +28,7 @@
 	                            <li><a href="index.html#menu">Menu</a></li>
 	                            <li><a href="index.html#reservation">Reservasi</a></li>
 	                            <li><a href="index.html#contact">Kontak</a></li>
+	                            <li><a data-toggle="modal" data-target="#myModal" style="cursor: pointer;">(Login)</a></li>
 	                        </ul>
 	                    </nav>
 	                </div>
@@ -107,37 +108,43 @@
 	        <div class="row">
 	            
 	            <div class="col-md-4 col-sm-6 col-xs-12 mb-30">
-	            	<div class="col-md-12">
-	            		<img src="assets/img/makanan/sotobetawi.jpg" class="img-rounded">
-	            	</div>
-	            	<div class="col-md-12 text-center">
-	            		<h3 class="text-info">Soto Betawi</h3>
-                        <h4 class="price">Rp. 12.000</h4>
-	            	</div>
+	            	<a href="detail-menu.html">
+	            		<div class="col-md-12">
+		            		<img src="assets/img/makanan/sotobetawi.jpg" class="img-rounded">
+		            	</div>
+		            	<div class="col-md-12 text-center">
+		            		<h3 class="text-info">Soto Betawi</h3>
+	                        <h4 class="price">Rp. 12.000</h4>
+		            	</div>
+	            	</a>
 	            </div>
 	            
 	            <div class="col-md-4 col-sm-6 col-xs-12 mb-30">
-	            	<div class="col-md-12">
-	            		<img src="assets/img/makanan/tengkleng.jpg" class="img-rounded">
-	            	</div>
-	            	<div class="col-md-12 text-center">
-	            		<h3 class="text-info">Tengkleng</h3>
-                        <h4>Rp. 12.000</h4>
-	            	</div>
+	            	<a href="detail-menu.html">
+		            	<div class="col-md-12">
+		            		<img src="assets/img/makanan/tengkleng.jpg" class="img-rounded">
+		            	</div>
+		            	<div class="col-md-12 text-center">
+		            		<h3 class="text-info">Tengkleng</h3>
+	                        <h4>Rp. 12.000</h4>
+		            	</div>
+		            </a>
 	            </div>
 	            
 	            <div class="col-md-4 col-sm-6 col-xs-12 mb-30">
-	            	<div class="col-md-12">
-	            		<img src="assets/img/makanan/ayambakar.jpg" class="img-rounded">
-	            	</div>
-	            	<div class="col-md-12 text-center">
-	            		<h3 class="text-info">Ayam Bakar</h3>
-                        <h4>Rp. 10.000</h4>
-	            	</div>
+	            	<a href="detail-menu.html">
+		            	<div class="col-md-12">
+		            		<img src="assets/img/makanan/ayambakar.jpg" class="img-rounded">
+		            	</div>
+		            	<div class="col-md-12 text-center">
+		            		<h3 class="text-info">Ayam Bakar</h3>
+	                        <h4>Rp. 10.000</h4>
+		            	</div>
+		            </a>
 	            </div>
 	            
 	            <div class="col-xs-12 text-center mt-50">
-	                <a href="#" class="btn btn-danger">Lihat Semua Menu <i class="fa fa-long-arrow-right"></i></a>
+	                <a href="semua-menu.html" class="btn btn-danger">Lihat Semua Menu <i class="fa fa-long-arrow-right"></i></a>
 	            </div>
 	            
 	        </div>
@@ -203,6 +210,39 @@
 	    
 	</div>
 
+  	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">LOGIN</h4>
+	      </div>
+	      <form action="/action_page.php">
+		      <div class="modal-body">
+		        <div class="form-group">
+				    <label for="email">Email:</label>
+				    <input type="email" class="form-control" id="email">
+				  </div>
+				  <div class="form-group">
+				    <label for="pwd">Password:</label>
+				    <input type="password" class="form-control" id="pwd">
+				  </div>
+				  <div class="checkbox">
+				    <label><input type="checkbox"> Remember me</label>
+				  </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+		        <button type="submit" class="btn btn-primary">Login</button>
+		      </div>  
+		   </form> 
+	    </div>
+
+	  </div>
+	</div>
 
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 	<!-- Bootstrap js -->

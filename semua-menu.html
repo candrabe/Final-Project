@@ -28,6 +28,7 @@
 	                            <li><a href="index.html#menu">Menu</a></li>
 	                            <li><a href="index.html#reservation">Reservasi</a></li>
 	                            <li><a href="index.html#contact">Kontak</a></li>
+	                            <li><a data-toggle="modal" data-target="#myModal" style="cursor: pointer;">(Login)</a></li>
 	                        </ul>
 	                    </nav>
 	                </div>
@@ -38,7 +39,39 @@
 	    </div>
 	</div>
 
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
 
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">LOGIN</h4>
+	      </div>
+	      <form action="/action_page.php">
+		      <div class="modal-body">
+		        <div class="form-group">
+				    <label for="email">Email:</label>
+				    <input type="email" class="form-control" id="email">
+				  </div>
+				  <div class="form-group">
+				    <label for="pwd">Password:</label>
+				    <input type="password" class="form-control" id="pwd">
+				  </div>
+				  <div class="checkbox">
+				    <label><input type="checkbox"> Remember me</label>
+				  </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+		        <button type="submit" class="btn btn-primary">Login</button>
+		      </div>  
+		   </form> 
+	    </div>
+
+	  </div>
+	</div>
 
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 	<!-- Bootstrap js -->
